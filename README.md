@@ -37,7 +37,8 @@ not contain anything other than directories and programs created by DockaGator,
 thus ensuring that they are not otherwise overwritten during the completion of
 the assignment.
 
-If you are using a Windows machine, you may need to use the following command.
+If you are using a Windows machine, you should use the following command, replacing "user" with
+the username of your machine.
 
 ```bash
 docker run -it --rm --name dockagator -v "%cd%":/project -v "C:\Users\user/.dockagator":/root/.local/share gatoreducator/dockagator /bin/bash
